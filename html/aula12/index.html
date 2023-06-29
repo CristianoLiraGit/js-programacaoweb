@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    
+</style>
+<body>
+    <h1>Aula 12 - Formulários</h1>
+    <form action=""> <!--action="arquivo.php" method="get" ou method="post"-->
+        <!-- CAMPO NOME -->
+        <label for="inome">Nome:</label>
+        <input type="text" id="inome" placeholder="Seu nome aqui" required>
+        <br><br>
+        <!-- CAMPO EMAIL -->
+        <label for="iemail">Email:</label>
+        <input type="email" id="iemail" placeholder="Seu email aqui" required>
+        <br><br>
+        <!-- CAMPO SENHA -->
+        <label for="isenha">Senha:</label>
+        <input type="password" id="isenha" placeholder="Senha aqui" required>
+        <br><br>
+        <!-- BOTÃO ENVIAR (SUBMIT) -->
+        <h2>Animal de Estimação - Input type="radio"</h2>
+        <input type="radio" name="animal" id="dog">
+        <label for="dog">Cachorro</label><br><br>
+        <input type="radio" name="animal" id="cat">
+        <label for="dog">Gato</label><br><br>
+        <input type="radio" name="animal" id="bird">
+        <label for="dog">Passarinho</label>
+        <p>Com as tags name com o mesmo nome, faz com que o radio somente selecione uma opção. Não se pode selecionar mais de uma opção devido ao mesmo 'name="animal"'.</p>
+        <h2>O que você tem em casa? Exemplo de input do type="checkbox"</h2>
+        <input type="checkbox" name="item1" id="item1" value="TV">
+        <label for="item1">TV</label><br><br>
+        <input type="checkbox" name="item2" id="item2" value="Geladeira">
+        <label for="item1">Geladeira</label><br><br>
+        <input type="checkbox" name="item3" id="item3" value="Computador">
+        <label for="item1">Computador</label><br><br>
+        <input type="checkbox" name="item4" id="item4" value="Micro-ondas">
+        <label for="item1">Micro-ondas</label><br><br>
+        <!-- CAMPO DO TIPO SELECT -->
+        <h2>Escolha uma cor:</h2>
+        <option value="vermelho">Vermelho</option> <!--O que é enviado no formulário é o que está dentro de value -->
+        <select name="" id="">
+            <option value="" selected disabled>Selecione uma cor</option>
+            <option value="azul">Azul</option>
+            <option value="amarelo">Amarelo</option>
+            <option value="verde">Verde</option>
+        </select>
+        <h2>Digite sua mensagem:</h2>
+        <textarea required name="" id="" cols="40" rows="15" placeholder="Seu texto aqui..."></textarea><br><br>
+        <input type="submit" value="Enviar Formulário">
+        <br><br>
+    </form>
+    <button>Clique aqui</button>
+</body>
+</html>
