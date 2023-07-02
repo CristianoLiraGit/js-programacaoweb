@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    background-color: black;
+    justify-content: center; /* Substitui o comando margin: auto; */
+}
+
+header {
+    position: absolute; /* Para deixar os links acima */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 750px;
+    height: 46px;
+}
+
+a {
+    display: inline-block;
+    background-image: linear-gradient(to top, red, gray, black, red);
+    text-decoration: none;
+    padding: 2px;
+    color: white;
+    border: 1px solid red;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+a:hover {
+    background-image: linear-gradient(to top, gray, black, gray);
+    border: 1px solid black;
+}
+
+main {
+    width: 750px;
+    padding: 10px;
+    background-color: white;
+    margin-top: 50px;
+}
+
+h1, h2 {
+    text-align: center;
+    border: 2px dashed red;
+    margin: 10px 0px;
+}
+
+p {
+    text-align: justify;
+    text-indent: 40px;
+    letter-spacing: normal; /* Adicione um valor em pixels */
+    word-spacing: normal; /* Adicione um valor em pixels */
+    font-size: large; /* Tamanho da fonte*/
+    font-weight: normal; /* Grossura da fonte */
+}
+
+/* Comandos para imagens */
+
+.exemplo-back {
+    height: 300px;
+    background-color: gray;
+    background-image: url("caminho");
+    background-size: cover; /* Há também a propriedade "contain" */ 
+    background-repeat: no-repeat;
+    background-position: center;
+    /* Usando os comando acima com Short-hand: */
+    /* background: gray url("caminho") no-repeat center */
+    /* Somente a propriedade background-size não entra no short-hand */
+}
