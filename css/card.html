@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .caixa {
+            text-align: center;
+            background-color: white;
+            width: 40%;
+            height: auto;
+            box-shadow: 0 4px 8px gray, 0 6px 20px 0 rgba(0,0,0,0.19);
+        }
+
+        .caixa img {
+            width: 100%;
+            background-position: center center;
+        }
+
+        .caixa:hover .reduzido {
+            white-space: normal;
+        }
+
+        .reduzido {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        p {
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="caixa">
+        <img src="https://picsum.photos/200" alt="lorem picsum">
+        <h2>Isso é um card!</h2>
+        <p class="reduzido">Oi! Tudo bom! Isso é um card. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat tempora perspiciatis dolore ut ipsum eaque totam blanditiis adipisci magni atque alias eum perferendis sapiente saepe ullam, aperiam quia, aut nobis?</p>
+    </div>
+</body>
+</html>
