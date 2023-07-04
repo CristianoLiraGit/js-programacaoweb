@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display flex</title>
+</head>
+<style>
+    * {
+        margin: 0;
+    }
+
+    header {
+        background-color: blue;
+        padding: 80px;
+        text-align: center;
+        color: white;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        background-color: black;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        padding: 14px 20px;
+    }
+
+    nav a:hover {
+        background-color: gray;
+        color: black;
+        font-weight: bold;
+    }
+
+    .corpo {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .card {
+        flex: 48%;
+        background-color: gray;
+        height: 100px;
+        margin: 0.5%;
+    }
+
+    @media screen  and (max-width:600px){
+        nav {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+        
+    
+
+    .flex-pai {
+        background-color: blue;
+        display: flex;
+        height: 200px;
+        flex-direction: row; /* column; */
+        flex-wrap: wrap; /* Não deixa que o conteúdo saia fora da div pai */
+        /* As propriedades acima (flex-direction e flex-wrap podem ser simplificadas com um shorthand: [ flex-flow: row wrap ] */
+        justify-content: space-evenly;
+        align-items: center;
+
+    }
+/*
+    @media screen and (max-width: 600px) {
+        .flex-pai {
+            flex-direction: column;
+        }
+    }
+*/
+    .flex-pai div {
+        background-color: white;
+        border: 1px solid black;
+        margin: 5px;
+        padding: 30px;
+        text-align: center;
+        /* flex-grow: 1; */ /*Faz com que os elementos cresçam uniformemente de acordo com o tamanho da div pai. */
+    }
+</style>
+<body>
+    <header>
+        <h1>Flexbox</h1>
+        <p>Este é um Layout Flexível</p>
+    </header>
+    <nav>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </nav>
+    <div class="corpo">
+        <div class="card">
+
+        </div>
+        <div class="card">
+
+        </div>
+    </div>
+    
+    <div class="flex-pai">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+</html>
