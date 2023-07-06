@@ -18,6 +18,8 @@ nav {
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    width: 100%;
 }
 
 nav h1 {
@@ -72,6 +74,7 @@ header {
     background-color: white;
     justify-content: center;
     align-items: center;
+    padding-top: 100px;
 }
 
 .headline {
@@ -185,4 +188,11 @@ footer {
     font-family: 'Lobster', cursive;
     color: white;
     font-size: 34px;
+}
+
+.whats {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    width: 60px;
 }
