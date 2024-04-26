@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propriedade Position</title>
+    <style>
+        .container {
+            background-color: blue;
+            display: inline-block;
+            position: relative;
+            height: 400px;
+            width: 100%;
+        }
+        .div1 {
+            background-color: yellow;
+            display: inline-block;
+            height: 100px;
+            position: sticky;
+            top: 0;
+            width: 30%;
+        }
+        .div2 {
+            background-color: white;
+            display: inline-block;
+            /* position: absolute; */
+            height: 100px;
+            width: 30%;
+        }
+        .div3 {
+            background-color: red;
+            display: inline-block;
+            position: absolute;
+            height: 100px;
+            margin-top: 5px;
+            margin-left: 5px;
+            width: 30%;
+        }
+        .whats {
+            background-color: green;
+            border-radius: 50%;
+            color: white;
+            width: 80px;
+            height: 80px;
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            text-align: center;
+            line-height: 75px;
+        }
+        .containerimg {
+            position: relative;
+        }
+        img {
+            width: 100%;
+            opacity: 0.4;
+            position: relative;
+        }
+        .texto {
+            text-align: center;
+            position: absolute;
+            font-weight: bold;
+            top: 50px;
+            left: 50%;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="div1">
+            Primeira Div
+        </div>
+        <div class="div2">
+            Segunda Div
+        </div>
+        <div class="div3">
+            Terceira Div
+        </div>
+    </div>
+    <h1>Propriedade position</h1>
+    <p>Para fazer uma div filha se movimentar dentro de uma div pai, o <u>pai</u> tem que ser <strong>position relative</strong> e o <u>filho</u> <strong>position absolute</strong>.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum alias aspernatur, ullam voluptas temporibus maxime et officia delectus, ut quia illo asperiores a est culpa similique? Quia numquam cupiditate facilis!</p>
+    <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, aspernatur? Labore unde tempore nisi atque amet veniam non fugit. Laboriosam quidem tempore excepturi placeat accusamus minima aliquid voluptas numquam voluptatum?</span><span>Assumenda quod eum a, voluptas veritatis voluptatum tempora fuga, culpa praesentium maxime dolore. Repellat, deserunt magni! Dolor minima velit, ipsum laudantium totam pariatur molestiae id sed cumque odio sapiente placeat?</span><span>Pariatur, earum? Odit asperiores minima eveniet suscipit nam totam, in deleniti similique assumenda maiores ut nulla dolor molestiae ullam quae, reprehenderit et est? Autem, dicta! Doloremque soluta quod deserunt inventore!</span><span>Velit aliquid repellendus hic nemo sapiente earum tempore, minima harum maxime exercitationem minus? Reiciendis accusantium quia quam consequatur tempora adipisci mollitia ipsum odio? Deleniti officia fugiat quaerat voluptate odio necessitatibus.</span><span>Dolor odit tempore inventore explicabo deserunt dignissimos maiores officiis id aut nostrum minima dolorum accusantium ratione, nemo adipisci expedita assumenda ipsa laborum perspiciatis. Labore inventore, maiores rem hic asperiores sequi!</span></p>
+    <div class="containerimg">
+        <p class="texto">CB500X</p>
+        <img src="moto.jpg" alt="">
+    </div>
+    <div class="whats">whats</div>
+</body>
+</html>
