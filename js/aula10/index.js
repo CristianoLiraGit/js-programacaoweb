@@ -20,3 +20,12 @@ onkeyup → Disparado quando uma tecla é solta sobre um elemento;
 onload → Disparado quando a página terminou de ser carregada. Body;
 onresize → Disparado quando há um redimencionamento da janela
 */
+
+function eventoClick(){
+    // return alert(`Clicou`);
+    document.body.style.backgroundColor = 'gray'
+}
+
+function eventoClickDuplo(){
+    return alert('Clique duplo acionado.')
+}
