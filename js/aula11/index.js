@@ -75,10 +75,3 @@ function filtragem(value, index, array) {
 }
 console.log(maior20);
 
-// Exemplo de função para pegar o maior valor
-function maiorNumero(numeros){
-    return Math.max.apply(null, numeros);
-}
-console.log(`O maior valor é ${maiorNumero()}`)
-
-// Exemplo de função para pegar o menor valor
