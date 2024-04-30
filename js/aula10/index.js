@@ -29,3 +29,16 @@ function eventoClick(){
 function eventoClickDuplo(){
     return alert('Clique duplo acionado.')
 }
+
+function viraVermelho(){
+    let div = document.getElementById('teste');
+    div.style.backgroundColor = 'red';
+}
+
+function viraAzul(){
+    let div = document.getElementById('teste');
+    div.style.backgroundColor = 'blue';
+}
+
+let digitado = document.getElementById('texto').value;
+let btn = document.getElementById('btn')

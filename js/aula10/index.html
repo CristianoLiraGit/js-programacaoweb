@@ -4,10 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eventos</title>
+    <link rel="stylesheet" href="../aula10/css/media-queries.css">
 </head>
 <body>
-    <h1>Eventos - Aula 10</h1>
-    <button onclick="eventoClick()" ondblclick ="eventoClickDuplo()">Clique Aqui</button>
-    <script src="index.js"></script>
+    <div style="text-align: center;">
+        <h1>Eventos - Aula 10</h1>
+        <button onclick="eventoClick()" ondblclick ="eventoClickDuplo()">Clique Aqui</button><br><br>
+        <script src="index.js"></script>
+    </div>
+    <div id="teste" onmouseover="viraVermelho()" onmouseout="viraAzul()" style="max-width: 80%; height: 200px; background-color: blue; margin: auto;"></div> <br><br>
+    <form action="">
+        <label for="texto">Campo de texto</label>
+        <input type="text" name="texto" id="texto">
+        <button id="btn">Clique aqui</button>
+    </form>
 </body>
 </html>
